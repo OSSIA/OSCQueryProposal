@@ -88,7 +88,7 @@ For all color spaces, an optional alpha channel value can be used:
 	],
 }
 ~~~
-- As mentioned above, not all of these attributes are required to be used in the same OSC node - for example, `position.cart.[xyz]` potentially includes `position.cart.x`, `position.cart.y`, and `position.cart.z`, but you don't need to use all of these at the same time.  The following examples are all correct:
+- As mentioned above, not all of these attributes are required to be used in the same OSC node - for example, `position.[xyz]` potentially includes `position.cart.x`, `position.cart.y`, and `position.z`, but you don't need to use all of these at the same time.  The following examples are all correct:
 ~~~json
 "2d_position": {
 	"FULL_PATH": "/2d_position",
