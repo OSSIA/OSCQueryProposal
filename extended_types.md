@@ -67,9 +67,9 @@ For all color spaces, an optional alpha channel value can be used:
   - `k`- A number describing the black value.
 
 - `color.[XYZ]`- A color value described in the CIE 1931 color space, potentially including an alpha channel.
-  - `X`- A number value describing the x tristimulus value.
-  - `Y`- A number value describing the y tristimulus value.
-  - `Z`- A number value describing the z tristimulus value.
+  - `X`- A number value describing the X tristimulus value.
+  - `Y`- A number value describing the Y tristimulus value.
+  - `Z`- A number value describing the Z tristimulus value.
 
 
 ### Examples 
