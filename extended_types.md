@@ -18,17 +18,13 @@ Following are some accepted values for the EXTENDED_TYPE attribute, for multi-di
   - `x`- A number value describing a distance.
   - `y`- A number value describing a distance.
   - `z`- A number value describing a distance.
-- `position.polar.[rp]`- A point in 2D space described using polar coordinates
+- `position.polar.[rpt]`- A point in space described using polar coordinates
   - `r`- A number value describing the radial distance.
   - `p`- A number value describing the azimuth angle.
-- `position.spherical.[rtp]`- A point in 3D space described using spherical coordinates.
-  - `r`- A number value describing the radial distance.
   - `t`- A number value describing the inclination angle.
-  - `p`- A number value describing the azimuth angle.
-- `position.cylindrical.[rpz]`- A point in 3D space described using cylindrical coordinates in the form suggested 
-  - `r`- A number value describing the radial distance.
-  - `p`- A number value describing the azimuth angle.
-  - `z`- A number value describing the height.
+
+One cartesian coordinate (typically `z`) can be used in lieu of the inclination angle `t`, thus making the coordinate system “cylindrical”
+	- `z`- A number value describing the height.
 
 The dimensions names used here for polar coordinates are those suggested by ISO 80000-2:2009/ISO 31-11.
 
