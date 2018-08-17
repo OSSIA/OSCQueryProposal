@@ -80,11 +80,11 @@ For all color spaces, an optional alpha channel value can be used:
 	"FULL_PATH": "/color/substractive",
 	"TYPE": "fffff",
 	"EXTENDED_TYPE": [
-		“color.c”,
-		“color.m,
-		“color.y”,
-		“color.k”,
-		“color.a”
+		"color.c",
+		"color.m",
+		"color.y",
+		"color.k",
+		"color.a"
 	],
 }
 ~~~
