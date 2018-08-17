@@ -35,7 +35,7 @@ The dimensions names used here for polar coordinates are those suggested by ISO 
   - `b`- A number value describing a distance.
   - `c`- A number value describing a distance.
   - `d`- A number value describing a distance.
-- `orientation.[ypr]`- The orientation of an object described using euler angles.
+- `orientation.[YPR]`- The orientation of an object described using euler angles.
   - `Y`- A number value describing the yaw angle.
   - `P`- A number value describing the pitch angle.
   - `R`- A number value describing the roll angle.
@@ -47,39 +47,44 @@ The dimensions names used here for polar coordinates are those suggested by ISO 
 
 ### Color
 
-- `color.[rgba]`- A color value described in the RGB space, potentially including an alpha channel.
+For all color spaces, an optional alpha channel value can be used:
+ 	- `a`- A number describing the alpha channel value.
+
+- `color.[rgb]`- A color value described in the RGB color space, potentially including an alpha channel.
   - `r`- A number describing the red channel value.
   - `g`- A number describing the green channel value.
   - `b`- A number describing the blue channel value.
-  - `a`- A number describing the alpha channel value.
-- `color.[hsva]`- A color value described in the HSV color space, potentially including an alpha channel.
+ 
+- `color.[hsv]`- A color value described in the HSV color space, potentially including an alpha channel.
   - `h`- A number describing the hue value.
   - `s`- A number describing the saturation value.
   - `v`- A number describing the "value" value (not a typo).
-  - `a`- A number describing the alpha value.
-- `color.[cmyka]`- A color value described in the CMYK color space, potentially including an alpha channel.
+
+- `color.[cmyk]`- A color value described in the CMYK color space, potentially including an alpha channel.
   - `c`- A number describing the cyan value.
   - `m`- A number describing the magenta value.
   - `y`- A number describing the yellow value.
   - `k`- A number describing the black value.
-  - `a`- A number describing the alpha value.
-- `color.[XYZa]`- A color value described in the CIE 1931 color space, potentially including an alpha channel.
+
+- `color.[XYZ]`- A color value described in the CIE 1931 color space, potentially including an alpha channel.
   - `X`- A number value describing the x tristimulus value.
   - `Y`- A number value describing the y tristimulus value.
   - `Z`- A number value describing the z tristimulus value.
-  - `a`- A number value describing the alpha value.
+
 
 ### Examples 
 
 - An example of expressing all cartesian position coordinates in one node:
 ~~~json
 "position": {
-	"FULL_PATH": "/position",
-	"TYPE": "fff",
+	"FULL_PATH": “/color/substractive”,
+	"TYPE": "fffff”,
 	"EXTENDED_TYPE": [
-		"position.x",
-		"position.y",
-		"position.z",
+		“color.c”,
+		“color.m,
+		“color.y”,
+		“color.k”,
+		“color.a”
 	],
 }
 ~~~
@@ -90,7 +95,7 @@ The dimensions names used here for polar coordinates are those suggested by ISO 
 	"TYPE": "ff",
 	"EXTENDED_TYPE": [
 		"position.x",
-		"position.y",
+		"position.y"
 	],
 }
 ~~~
