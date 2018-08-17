@@ -77,7 +77,7 @@ For all color spaces, an optional alpha channel value can be used:
 - An example of expressing all cartesian position coordinates in one node:
 ~~~json
 "position": {
-	"FULL_PATH": “/color/substractive”,
+	"FULL_PATH": "/color/substractive",
 	"TYPE": "fffff”,
 	"EXTENDED_TYPE": [
 		“color.c”,
