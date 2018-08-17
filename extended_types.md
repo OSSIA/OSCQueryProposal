@@ -78,7 +78,7 @@ For all color spaces, an optional alpha channel value can be used:
 ~~~json
 "position": {
 	"FULL_PATH": "/color/substractive",
-	"TYPE": "fffff”,
+	"TYPE": "fffff",
 	"EXTENDED_TYPE": [
 		“color.c”,
 		“color.m,
